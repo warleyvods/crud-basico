@@ -1,14 +1,19 @@
 package com.warley.crudbasico.controller.dtos.responses;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
-public record PessoaResponseDTO(
-        Long id,
-        String nome,
-        String cpf,
-        Integer idade,
-        String rg,
-        LocalDateTime createdAt
-) {
+@Data
+@AllArgsConstructor
+public class PessoaResponseDTO {
+
+    private Long id;
+    private String nome;
+    private String cpf;
+    private Integer idade;
+    private String rg;
+    private LocalDateTime createdAt;
 
 }

@@ -14,3 +14,11 @@ spring:
   h2:
     console:
       enabled: true
+
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          introspection-uri: "http://localhost:8081/oauth/check_token"
+          client-id: "warleyvods-web"
+          client-secret: "web123"

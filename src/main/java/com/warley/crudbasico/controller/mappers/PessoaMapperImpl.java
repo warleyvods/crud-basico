@@ -14,10 +14,10 @@ public class PessoaMapperImpl implements PessoaMapper {
     @Override
     public Pessoa paraEntity(PessoaRequestDTO pessoaRequestDTO) {
         Pessoa pessoa = new Pessoa();
-        pessoa.setNome(pessoaRequestDTO.nome());
-        pessoa.setCpf(pessoaRequestDTO.cpf());
-        pessoa.setIdade(pessoaRequestDTO.idade());
-        pessoa.setRg(pessoaRequestDTO.rg());
+        pessoa.setNome(pessoaRequestDTO.getNome());
+        pessoa.setCpf(pessoaRequestDTO.getCpf());
+        pessoa.setIdade(pessoaRequestDTO.getIdade());
+        pessoa.setRg(pessoaRequestDTO.getRg());
 
         return pessoa;
     }

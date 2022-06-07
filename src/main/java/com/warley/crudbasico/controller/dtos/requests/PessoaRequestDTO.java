@@ -1,21 +1,23 @@
 package com.warley.crudbasico.controller.dtos.requests;
 
+import lombok.Data;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-public record PessoaRequestDTO(
+@Data
+public class PessoaRequestDTO {
 
-        @NotBlank
-        String nome,
+    @NotBlank
+    private String nome;
 
-        @NotBlank
-        String cpf,
+    @NotBlank
+    private String cpf;
 
-        @NotNull
-        Integer idade,
+    @NotNull
+    private Integer idade;
 
-        @NotBlank
-        String rg
-) {
+    @NotBlank
+    private String rg;
 
 }
